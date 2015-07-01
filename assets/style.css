@@ -1,3 +1,5 @@
+
+
 * {
 	/*outline: 1px solid;*/
 }
@@ -23,6 +25,7 @@
 	.input-field input[type=text].valid {
 		color: lightgreen;
 		border-bottom: 1px solid green darken-4;
+		
 		box-shadow: 0 1px 0 0 green darken-4;
 	}
 
@@ -36,3 +39,4 @@
 /*   .input-field .prefix.active {
      color: #000;
    }*/
+

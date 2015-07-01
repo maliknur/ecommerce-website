@@ -5,6 +5,11 @@ $(document).ready(function(){
 		menuWidth: 300
 	})
 
+
+	$('select').material_select();
+		    
+    $('.tooltipped').tooltip({delay: 30});
+
 	$('.datepicker').pickadate({
 		// selectMonths: true,
 		// selectYears: true
