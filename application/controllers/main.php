@@ -15,9 +15,20 @@ class Main extends CI_Controller {
 
 	public function index()
 	{	
-	   $this->load->view('index');
+	   $this->load->view('orders');
 	}
 
+
+	public function products()
+	{	
+	   $this->load->view('products');
+	}
+
+
+	public function dashboard()
+	{
+		$this->load->view('dashboard');
+	}
 
 
 
