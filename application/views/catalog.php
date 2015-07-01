@@ -25,6 +25,9 @@
 	</script>
 </head>
 <body>
+
+<?php include("partials/navbar.php");?>
+
 	<div class="container">
 <!-- 		<div id="header"></div> -->
 		<div class="row">
