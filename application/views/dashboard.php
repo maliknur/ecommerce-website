@@ -2,36 +2,75 @@
 <html lang="en">
 <head>
 	<?php include('partials/header.php'); ?>
+
+	
+	<script type="text/javascript" src="assets/js/jquery.easy-pie-chart.js"></script>
+	<script src="assets/js/scale.fix.js"></script>
+	<link rel="stylesheet"type="text/css" href="assets/jquery.easy-pie-chart.css">
+	<link rel="stylesheet" href="assets/styles_pie.css">
+    <link rel="stylesheet" href="assets/pygment_trac.css">	
+    <link type="text/css" rel="stylesheet" href="assets/style_dashboard.css">
+	<script>
+	$(document).ready(function(){
+
+		    var initCharts = function() {
+		      var charts = $('.percentage');
+		      charts.easyPieChart({
+		        animate: 1000,
+		        onStep: function(value) {
+		          this.$el.find('span').text(~~value);
+		        }
+		      });
+		      $('.updatePieCharts').on('click', function(e) {
+		        e.preventDefault();
+		        charts.each(function() {
+		          $(this).data('easyPieChart').update(Math.floor(100*Math.random()));
+		        });
+		      });
+		    }
+
+		    initCharts();
+
+
+
+	});
+
+	</script>
 	<title>Dashboard</title>
 </head>
 <body>
-	<div class="container"> 	
-		
-		<div class="row">
-		  
-		   <!-- search button --> 
-		   <div class="col s6">	
-			    <form class="col s12" action="orders/search" method="post">
-			     
-			        <div class="input-field col s6 red-text darken-4">
-						<!-- <i class="material-icons"></i> -->
-						<i class="material-icons prefix">search</i> 
-			          <input id="icon_prefix" type="text" class="validate">
-			          <label for="icon_prefix">Search</label>
-			        </div>
-			    
-			    </form>
-		    </div>
 
-		  </div>
+<?php include('partials/navbar.php') ?>
+
+
+	
+<div class="container"> 	
+
+	<!-- first row -->
+		
+	<div class="row">
+	  
+	   <!-- search button --> 
+	   <div class="col s6">	
+		    <form class="col s12" action="orders/search" method="post">
+		     
+		        <div class="input-field col s6 red-text darken-4">
+					<!-- <i class="material-icons"></i> -->
+					<i class="material-icons prefix">search</i> 
+		          <input id="icon_prefix" type="text" class="validate">
+		          <label for="icon_prefix">Search</label>
+		        </div>
+		    
+		    </form>
+	    </div>
+
+	  </div>
 
 		  		
 
-
+	<!-- second row -->
 	<div class="row">
 		
-
-
 
 		<!-- new orders table -->
 		<div class="col s6">
@@ -47,10 +86,8 @@
 						<th>Total</th>
 						<th>Status</th>
 
-					
 					</tr>
-					
-
+			
 				<tr>
 					<td>1</td>
 					<td>Steve Jobs</td>
@@ -106,12 +143,8 @@
 			<span class="right">
 				<a href="" > see all..</a>
 			</span>
-				
-
-
-
-			</div>
 		</div>
+	</div>
 
 		<!-- shipping table -->
 		<div class="col s6">
@@ -178,7 +211,10 @@
 
 			</div>
 		</div>
+	</div>
 
+	
+	<!-- third row -->
 	<div class="row">
 		
 
@@ -259,21 +295,15 @@
 				    <div class="label">New customers</div>
 				</div>
 
-				  
-
-
 			</div>
 		</div>	
-
-			
+		
 </div>
 
 
-
-
-
 	
-</div><!--  end of container -->
+</div>
+<!--  end of container -->
 	
 </body>
 </html>

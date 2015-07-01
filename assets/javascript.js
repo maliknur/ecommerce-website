@@ -14,27 +14,6 @@
 		    $('.tooltipped').tooltip({delay: 30});
 
 
-		    
-
-		    var initCharts = function() {
-		      var charts = $('.percentage');
-		      charts.easyPieChart({
-		        animate: 1000,
-		        onStep: function(value) {
-		          this.$el.find('span').text(~~value);
-		        }
-		      });
-		      $('.updatePieCharts').on('click', function(e) {
-		        e.preventDefault();
-		        charts.each(function() {
-		          $(this).data('easyPieChart').update(Math.floor(100*Math.random()));
-		        });
-		      });
-		    }
-
-		    initCharts();
-
-
 
 	});
 

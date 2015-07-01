@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <?php include("partials/header.php"); ?>
+<link rel="stylesheet" href="assets/style.css">
 	<title></title>
 
 </head>

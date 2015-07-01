@@ -1,0 +1,22 @@
+
+th, td{
+	padding: 5px;
+}
+
+input[type=text]{
+	margin-bottom: 0;
+	border-bottom: none;
+}
+
+.select-wrapper input.select-dropdown {
+	margin-bottom: 0;
+	border-bottom: none;
+	
+}
+table{
+	margin-bottom: 10px;
+}
+
+.statistics{
+	min-height: 297px;
+}

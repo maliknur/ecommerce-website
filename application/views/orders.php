@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
 	<?php include('partials/header.php'); ?>
+	<link type="text/css" rel="stylesheet" href="assets/style_dashboard.css">
 	<title>Dashboard Orders</title>
 </head>
 <body>
+
+<?php include('partials/navbar.php'); ?>
+
+
 	<div class="container"> 	
 		
 		<div class="row">

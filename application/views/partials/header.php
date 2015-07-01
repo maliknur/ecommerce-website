@@ -5,7 +5,7 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="assets/style.css">
+	
 
 
 	<!-- jQuery & JavaScript -->
@@ -13,17 +13,8 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
 	<script type="text/javascript" src="assets/javascript.js"></script>
-	
-	
-	<script type="text/javascript" src="assets/js/jquery.easy-pie-chart.js"></script>
-	 <script src="assets/js/scale.fix.js"></script>
-	<link rel="stylesheet"type="text/css" href="assets/jquery.easy-pie-chart.css">
-	<link rel="stylesheet" href="assets/styles_pie.css">
-    <link rel="stylesheet" href="assets/pygment_trac.css">
-	
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	
 
 	
