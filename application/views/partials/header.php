@@ -11,3 +11,4 @@
 	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+	<script type="text/javascript" src="assets/javascript.js"></script>
