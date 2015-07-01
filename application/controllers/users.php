@@ -11,11 +11,15 @@ class Main extends CI_Controller {
 
 	public function index()
 	{	
+<<<<<<< HEAD:application/controllers/main.php
 
+=======
+>>>>>>> parent of a4d07d4... admin dashboard setup:application/controllers/users.php
 	   $this->load->view('index');
 	}
 
 
+<<<<<<< HEAD:application/controllers/main.php
 	public function products()
 	{	
 	   $this->load->view('products');
@@ -31,6 +35,8 @@ class Main extends CI_Controller {
 	{
 		$this->load->view('orders');
 	}
+=======
+>>>>>>> parent of a4d07d4... admin dashboard setup:application/controllers/users.php
 
 
 
