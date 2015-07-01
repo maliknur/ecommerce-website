@@ -28,13 +28,15 @@
 	<div class="container">
 <!-- 		<div id="header"></div> -->
 		<div class="row">
-			<div id="sidebar" class="col s12 m2 l2">
+			<div id="sidebar" class="col s12 m4 l2">
 				<div class="card-panel red lighten-2">
 					<div class="row">
 						<div class="input-field col s10">
-							<i class="small material-icons prefix">search</i>
-							<input placeholder='Search' id="search" type="text" class="validate">
-							<label for="search"></label>
+							<form action='/main/product_info'>
+								<i class="small material-icons prefix">search</i>
+								<input placeholder='Search' id="search" name ="search" type="text" class="validate">
+								<label for="search"></label>
+							</form>
 						</div>
 					</div>
 					<div class="row">
@@ -54,7 +56,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="catalog" class="col s12 m10 l10">
+			<div id="catalog" class="col s12 m8 l10">
 				<div class="card-panel red lighten-2">
 					<div class="row">
 						<div class="col s6">
@@ -70,7 +72,7 @@
 						</div>
 						<div class="col s5">
 							<!-- Dropdown Trigger -->
-							<a class='dropdown-button btn right blue lighten-4' href='#' data-activates='dropdown1'>Filter</a>
+							<a class='dropdown-button btn right' href='#' data-activates='dropdown1'>Filter</a>
 							<!-- Dropdown Structure -->
 							<ul id='dropdown1' class='dropdown-content'>
 							<li><a href="#!">Price</a></li>
@@ -80,24 +82,24 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col s12	">
+						<div class="col s12	center-align">
 							<div class="products">
-								<img src="assets/dress-shirt.png" width="150px">
-								<img src="assets/dress-shirt.png" width="150px">
-								<img src="assets/dress-shirt.png" width="150px">
-								<img src="assets/dress-shirt.png" width="150px">
-								<img src="assets/dress-shirt.png" width="150px">
-								<img src="assets/dress-shirt.png" width="150px">
-								<img src="assets/dress-shirt.png" width="150px">
-								<img src="assets/dress-shirt.png" width="150px">
-								<img src="assets/dress-shirt.png" width="150px">
-								<img src="assets/dress-shirt.png" width="150px">
+								<a href="/main/product_info"><img src="assets/dress-shirt.png" width="150px"></a>
+								<a href="/main/product_info"><img src="assets/dress-shirt.png" width="150px"></a>
+								<a href="/main/product_info"><img src="assets/dress-shirt.png" width="150px"></a>
+								<a href="/main/product_info"><img src="assets/dress-shirt.png" width="150px"></a>
+								<a href="/main/product_info"><img src="assets/dress-shirt.png" width="150px"></a>
+								<a href="/main/product_info"><img src="assets/dress-shirt.png" width="150px"></a>
+								<a href="/main/product_info"><img src="assets/dress-shirt.png" width="150px"></a>
+								<a href="/main/product_info"><img src="assets/dress-shirt.png" width="150px"></a>
+								<a href="/main/product_info"><img src="assets/dress-shirt.png" width="150px"></a>
+								<a href="/main/product_info"><img src="assets/dress-shirt.png" width="150px"></a>
 							</div>
 						</div>
 					</div>
 					<div class="section"></div>
 					<div class="row">
-						<div class="col s8">
+						<div class="col s12 offset-l3">
 						  <ul class="pagination">
 						    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
 						    <li class="waves-effect"><a href="#!">1</a></li>

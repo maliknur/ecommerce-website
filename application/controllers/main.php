@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Mains extends CI_Controller {
+class Main extends CI_Controller {
 
 	
 	// public function __construct()
@@ -18,10 +18,10 @@ class Mains extends CI_Controller {
 	   $this->load->view('catalog');
 	}
 
-	// public function catalog()
-	// {
-	// 	die('hi');
-	// 	$this->load->view('catalog');
-	// }
+	public function product_info()
+	{
+		$this->load->view('product_info');
+	}
+
 
 }
