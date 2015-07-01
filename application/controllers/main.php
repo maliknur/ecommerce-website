@@ -11,8 +11,8 @@ class Main extends CI_Controller {
 
 	public function index()
 	{	
-<<<<<<< HEAD:application/controllers/main.php
-	   $this->load->view('orders');
+
+	   $this->load->view('index');
 	}
 
 
@@ -27,16 +27,16 @@ class Main extends CI_Controller {
 		$this->load->view('dashboard');
 	}
 
-
-
-
-=======
-	   $this->load->view("index");
+	public function orders()
+	{
+		$this->load->view('orders');
 	}
+
+
 
 	public function cart()
 	{
 		$this->load->view("cart");
 	}
->>>>>>> 7d7e616507917d5731dec02c2f57b919f060df9e:application/controllers/main.php
+
 }

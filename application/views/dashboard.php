@@ -246,7 +246,17 @@
 				
 				<div class="chart">
 				   <div class="percentage" data-percent="55"><span>55</span>%</div>
-				    <div class="label">New visitors</div>
+				    <div class="label">New orders</div>
+				</div>
+
+				<div class="chart">
+				   <div class="percentage" data-percent="68"><span>68</span>%</div>
+				    <div class="label">Sales</div>
+				</div>
+
+				<div class="chart">
+				   <div class="percentage" data-percent="18"><span>18</span>%</div>
+				    <div class="label">New customers</div>
 				</div>
 
 				  
