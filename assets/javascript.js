@@ -1,12 +1,13 @@
-// <script type="text/javascript">
-
-	$(document).ready(function(){
+$(document).ready(function(){
 	
 	// Activate the side menu 
-		$(".button-collapse").sideNav({
-			menuWidth: 300
-		});
+	$(".button-collapse").sideNav({
+		menuWidth: 300
+	})
 
-	});
+	$('.datepicker').pickadate({
+		// selectMonths: true,
+		// selectYears: true
+	})
 
-// </script>
+})
