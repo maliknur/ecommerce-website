@@ -1,0 +1,26 @@
+*{
+	/*outline: 1px solid silver;*/
+	color: white;
+}
+#header{
+	min-height: 5em;
+}
+#sidebar, #catalog{
+	/*outline: 1px solid black;*/
+}
+	.pages li{
+		display: inline-block;
+		border-right: 1px solid black;
+		padding:0em 1em;
+		padding-right:1.4em; 
+	}
+	.pages li:last-child{
+		border-right: none;
+	}
+	img{
+		margin: 20px;
+	}
+	.filter-text{
+		font-size: 1.5em;
+		margin-right: .5em;
+	}

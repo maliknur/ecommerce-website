@@ -15,10 +15,13 @@ class Mains extends CI_Controller {
 
 	public function index()
 	{	
-	   $this->load->view('index');
+	   $this->load->view('catalog');
 	}
 
-
-
+	// public function catalog()
+	// {
+	// 	die('hi');
+	// 	$this->load->view('catalog');
+	// }
 
 }
