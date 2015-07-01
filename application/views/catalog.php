@@ -41,7 +41,7 @@
 					</div>
 					<div class="row">
 						<div class="col s12">
-							<h4>Catagory</h4>
+							<h4>Category</h4>
 						</div>
 						<div class="col s10 offset-s2">
 							<ul>
