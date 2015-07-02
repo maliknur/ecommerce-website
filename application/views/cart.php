@@ -76,14 +76,14 @@
 							<td>T-shirt</td>
 							<td>$20.00</td>
 							<td>2</td>
-							<td><a href=""><i class="material-icons">shopping_cart</i></a><a href=""><i class="material-icons">delete</i></a></td>
+							<td><a href=""><i class="material-icons">edit</i></a><a href=""><i class="material-icons">delete</i></a></td>
 							<td>$40.00</td>
 						</tr>
 						<tr>
 							<td>Sweater</td>
 							<td>$60.00</td>
 							<td>3</td>
-							<td><a href=""><i class="material-icons">shopping_cart</i></a><a href=""><i class="material-icons">delete</i></a></td>
+							<td><a href=""><i class="material-icons">edit</i></a><a href=""><i class="material-icons">delete</i></a></td>
 							<td>$180.00</td>
 						</tr>
 						<tr>

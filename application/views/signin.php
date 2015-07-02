@@ -13,8 +13,18 @@
 <body>
 	<?php include("partials/navbar.php"); ?>
 
-	<div class="container topspace">
-
+	<div class="container">
+		<div class="row registered">
+			<?php if ($this->session->flashdata("registered")) { ?>
+			<div class="col s12 m6 offset-m3 l6 offset-l3">
+				<div class="card lightblue hoverable">
+					<div class="card-content">
+						<p class="center-align"><?= $this->session->flashdata("registered") ?></p>
+					</div>
+				</div>
+			</div>
+			<?php } ?>
+		</div>
 		<div class="row">
 			<div class="col s12 m6 offset-m3 l6 offset-l3">
 				<div class="card lightblue hoverable">
@@ -39,6 +49,11 @@
 						</form>
 					</div>
 				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 m6 offset-m3 l6 offset-l3">
+				<p class="center-align">New to E-Commerce? <a href="register">Register!</a></p>
 			</div>
 		</div>
 	</div>

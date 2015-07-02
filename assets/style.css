@@ -7,8 +7,13 @@
 		color: #000;
 	}
 
-	.topspace {
-		padding-top: 7em;
+/*	.topspace {
+		padding-top: 6em;
+	}
+*/
+
+	.registered {
+		min-height: 5em;
 	}
 
 	.topspace_register {
@@ -17,6 +22,10 @@
 
 	.fixed {
 		position: fixed;
+	}
+
+	.block {
+		display: block;
 	}
 
 	table {
@@ -50,7 +59,7 @@
 
 	/* valid color */
 	.input-field input[type=text].valid {
-		color: lightgreen;
+		color: darkgreen;
 		border-bottom: 1px solid green darken-4;
 		
 		box-shadow: 0 1px 0 0 green darken-4;
