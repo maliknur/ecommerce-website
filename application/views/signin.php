@@ -14,11 +14,11 @@
 	<?php include("partials/navbar.php"); ?>
 
 	<div class="container topspace">
+
 		<div class="row">
 			<div class="col s12 m6 offset-m3 l6 offset-l3">
-				<div class="card lightblue">
+				<div class="card lightblue hoverable">
 					<div class="card-content">
-
 						<form action="/main/check_signin" method="post" class="col s12">
 							<div class="row">
 								<div class="input-field col s12">
@@ -36,7 +36,6 @@
 							<div class="center-align section">
 								<button class="waves-effect waves-light btn" type="submit">Sign in</button>
 							</div>
-
 						</form>
 					</div>
 				</div>

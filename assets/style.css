@@ -11,6 +11,26 @@
 		padding-top: 7em;
 	}
 
+	.topspace_register {
+		padding-top: 1.2em;
+	}
+
+	.fixed {
+		position: fixed;
+	}
+
+	table {
+		color: black;
+	}
+
+		table td i {
+			color: black;
+		}
+
+	.valigntop {
+		vertical-align: top;
+	}
+
 	/* label color */
    .input-field label {
 		color: black;

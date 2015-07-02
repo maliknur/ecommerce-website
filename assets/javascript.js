@@ -11,8 +11,8 @@ $(document).ready(function(){
     $('.tooltipped').tooltip({delay: 30});
 
 	$('.datepicker').pickadate({
-		// selectMonths: true,
-		// selectYears: true
+		selectMonths: true,
+		selectYears: true
 	})
 
 })

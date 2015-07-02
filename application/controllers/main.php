@@ -7,6 +7,9 @@ class Main extends CI_Controller {
 	{
 		parent::__construct();
 		// $this->output->enable_profiler();	
+
+		// Model loaded by Chris
+		$this->load->model("user");
 	}
 
 	public function index()
@@ -47,8 +50,28 @@ class Main extends CI_Controller {
 	public function check_signin()
 	{
 		$post = $this->input->post();
-		$this->load->model("user");
 		$user = $this->user->check_signin($post);
-		var_dump($user);
+		redirect("dashboard");
+	}
+
+	public function register()
+	{
+		$this->load->view("register");
+	}
+
+	public function register_new_user()
+	{
+		$post = $this->input->post();
+		$validate_result = $this->user->validate_registration($post);
+		if ($validate_result == "valid")
+		{
+			$this->user->register_new_user($post);
+		}
+		else
+		{
+			$errors = array(validation_errors());
+			$this->session->set_flashdata("errors", $errors);
+			redirect("register");
+		}
 	}
 }
