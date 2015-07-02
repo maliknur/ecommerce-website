@@ -17,12 +17,13 @@ class Main extends CI_Controller {
 		$this->load->view("catalog");
 	}
 
-	public function product_info()
+	public function product_info($product_id)
 	{
-		$this->load->view('product_info');
+		$this->load->model("customized_models/catalog_product", "catalog");
+		$product = $this->catalog->get_product_image_by_id($product_id);
+		// var_dump($product);
+		$this->load->view('product_info', $product);
 	}
-
-	
 
 	public function cart()
 	{

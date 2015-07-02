@@ -3,24 +3,38 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Catalogs extends CI_Controller {
 
+	public $limit;
+
 	public function __construct()
 	{
 		parent::__construct();
 		// $this->output->enable_profiler();	
+		$this->limit = 15;
 	}
 
 	public function index()
 	{
-		$this->load->view("partials/catalog_products");
-		// die('index');
+		die('index');
 	}
 
 	public function catalog_page()
 	{
 		$this->load->model("customized_models/catalog_product", "catalog");
+		$limit = "LIMIT ". $this->limit;
+		$products['limit'] = $this->limit;
+
+		$products['products'] = $this->catalog->get_product_image_with_limit($limit);
 		$products['all'] = $this->catalog->get_product_image();
 
 		$this->load->view("partials/catalog_products", $products);
+	}
+
+	public function product_info($product_id)
+	{
+		var_dump($product_id);
+		$this->load->model("customized_models/catalog_product", "catalog");
+		$product = $this->catalog->get_product_image_by_id($product_id);
+		die('product_info');
 	}
 
 }

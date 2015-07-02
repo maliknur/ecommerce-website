@@ -12,18 +12,9 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 				 
-		   $('.dropdown-button').dropdown({
-		      inDuration: 300,
-		      outDuration: 225,
-		      constrain_width: true, // Does not change width of dropdown to that of the activator
-		      hover: true, // Activate on hover
-		      gutter: 0, // Spacing from edge
-		      belowOrigin: false // Displays dropdown below the button
-		    });
-
 		   //auto-load
 		   $.get("/catalogs/catalog_page", function(res){
-		   		$("#products").html(res);
+		   		$("#catalog").html(res);
 		   });
 
 		   //ajax 
@@ -38,14 +29,14 @@
 	<div class="container">
 <!-- 		<div id="header"></div> -->
 		<div class="row">
+			<div class="section"></div>
 			<div id="sidebar" class="col s12 m4 l2">
-				<div class="section"></div>
-				<div class="card-panel">
+				<div class="card-panel categories">
 					<div class="row">
 						<div class="col s12">
 							<h5>Category</h5>
 						</div>
-						<div class="col s10 offset-s2">
+						<div class="col s10 offset-s1">
 							<ul>
 								<li><a href="">Tshirts(23)</a></li>
 								<li><a href="">shorts(15)</a></li>
@@ -57,59 +48,24 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div id="catalog" class="col s12 m8 l10">
-				<div class="card-panel">
+				<div class="card-panel refined-sorts">
 					<div class="row">
-						<div class="col s6">
-							<h3>Tshirts (page2)</h3>
+						<div class="col s12">
+							<h6>Refine Search</h6>
 						</div>
-						<div class="col s5 pages">
-							<ul class="right">
-								<li><a href="">first</a></li>
-								<li><a href="">prev</a></li>
-								<li>2</li>
-								<li><a href="">next</a></li>
+						<div class="col s10 offset-s1">
+							<ul>
+								<li><a href="">Prices</a></li>
+								<li><a href="">Colors</a></li>
+								<li><a href="">Sizes</a></li>
+								<li><a href="">Brands</a></li>
 							</ul>
-						</div>
-						<div class="col s5">
-							<!-- Dropdown Trigger -->
-							<a class='dropdown-button btn right' href='#' data-activates='dropdown1'>Filter</a>
-							<!-- Dropdown Structure -->
-							<ul id='dropdown1' class='dropdown-content'>
-							<li><a href="#!">Price</a></li>
-							<li><a href="#!">Most Popular</a></li>
-							</ul>
-							<span class="filter-text right">Sorted by</span>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col s12	center-align">
-							<div id="products">
-								<!-- "partials/catalog_products.php" -->
-							</div>
-						</div>
-					</div>
-					<div class="section"></div>
-					<div class="row">
-						<div class="col s12 offset-l3">
-						  <ul class="pagination">
-						    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-						    <li class="waves-effect"><a href="#!">1</a></li>
-						    <li class="active"><a href="#!">2</a></li>
-						    <li class="waves-effect"><a href="#!">3</a></li>
-						    <li class="waves-effect"><a href="#!">4</a></li>
-						    <li class="waves-effect"><a href="#!">5</a></li>
-						    <li class="waves-effect"><a href="#!">6</a></li>
-						    <li class="waves-effect"><a href="#!">7</a></li>
-						    <li class="waves-effect"><a href="#!">8</a></li>
-						    <li class="waves-effect"><a href="#!">9</a></li>
-						    <li class="waves-effect"><a href="#!">10</a></li>
-						    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-						  </ul>
 						</div>
 					</div>
 				</div>
+			</div>
+			<div id="catalog" class="col s12 m8 l10">
+				<!-- "partials/catalog_products.php" -->
 			</div>
 		</div>
 	</div>

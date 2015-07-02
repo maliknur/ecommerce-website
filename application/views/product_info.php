@@ -20,6 +20,9 @@
 		.product_info, .card-panel{
 			background-color: #D0E4F2
 		}
+		.back{
+			vertical-align: bottom;
+		}
 	</style>
 	<script type="text/javascript">
 		$(document).ready(function(){
@@ -42,31 +45,31 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col l12"><a href="/">Go Back</a></div>
+			<div class="col l12 back"><a href="/">Go Back</a></div>
 		</div>
 		<div class="card-panel">
 			<div class="row">
 				<div class="col l12 product_info">
 					<div class="row">
 						<div class="col l12">
-							<h3>Dress Shirt</h3>
+							<h3><?php echo $name;?></h3>
 						</div>
 					</div>
 					<div class="row center-align">
 						<div class="col l4 product_images">
-							<a href=""	><img src="/assets/img/dress-shirt.png" width="230px"></a>
+							<a href=""	><img src=<?php echo '"'.$filename.'"';?> width="230px"></a>
 							<div class="section"></div>
 							<div class="row">
 								<div class="col l12">
-									<a href=""><img src="/assets/img/dress-shirt.png" width="50px"></a>
-									<a href=""><img src="/assets/img/dress-shirt.png" width="50px"></a>
-									<a href=""><img src="/assets/img/dress-shirt.png" width="50px"></a>
-									<a href=""><img src="/assets/img/dress-shirt.png" width="50px"></a>
+									<a href=""><img src=<?php echo '"'.$filename.'"';?> width="50px"></a>
+									<a href=""><img src=<?php echo '"'.$filename.'"';?> width="50px"></a>
+									<a href=""><img src=<?php echo '"'.$filename.'"';?> width="50px"></a>
+									<a href=""><img src=<?php echo '"'.$filename.'"';?> width="50px"></a>
 								</div>
 							</div>
 						</div>
 						<div class="col l7 product_description left-align">
-							<p>Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...Product description...</p>
+							<p><?php echo $description;?></p>
 						</div>
 					</div>
 					<div class="row price_buy">
@@ -77,9 +80,7 @@
 								<a class='dropdown-button btn right' name="price" href='#' data-activates='dropdown1'>Price</a>
 								<!-- Dropdown Structure -->
 								<ul id='dropdown1' name="price" class='dropdown-content'>
-									<li><a href="#!">1 ($19.99)</a></li>
-									<li><a href="#!">2 ($29.99)</a></li>
-									<li><a href="#!">3 ($39.99)</a></li>
+									<li><a href="#!">1 ($<?php echo $price;?>)</a></li>
 								</ul>
 							</form>
 						</div>
@@ -96,13 +97,13 @@
 			<div class="section"></div>
 			<div class="row similiar_products center-align">
 				<div class="col l12">
-					<a href=""><img src="/assets/img/dress-shirt.png" width="100px"></a>
-					<a href=""><img src="/assets/img/dress-shirt.png" width="100px"></a>
-					<a href=""><img src="/assets/img/dress-shirt.png" width="100px"></a>
-					<a href=""><img src="/assets/img/dress-shirt.png" width="100px"></a>
-					<a href=""><img src="/assets/img/dress-shirt.png" width="100px"></a>
-					<a href=""><img src="/assets/img/dress-shirt.png" width="100px"></a>
-					<a href=""><img src="/assets/img/dress-shirt.png" width="100px"></a>
+					<a href=""><img src=<?php echo '"'.$filename.'"';?> width="100px"></a>
+					<a href=""><img src=<?php echo '"'.$filename.'"';?> width="100px"></a>
+					<a href=""><img src=<?php echo '"'.$filename.'"';?> width="100px"></a>
+					<a href=""><img src=<?php echo '"'.$filename.'"';?> width="100px"></a>
+					<a href=""><img src=<?php echo '"'.$filename.'"';?> width="100px"></a>
+					<a href=""><img src=<?php echo '"'.$filename.'"';?> width="100px"></a>
+					<a href=""><img src=<?php echo '"'.$filename.'"';?> width="100px"></a>
 				</div>
 			</div>
 		</div>
