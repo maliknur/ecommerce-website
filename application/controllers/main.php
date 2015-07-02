@@ -22,8 +22,6 @@ class Main extends CI_Controller {
 		$this->load->view('product_info');
 	}
 
-	
-
 	public function cart()
 	{
 		$this->load->view("cart");
