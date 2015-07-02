@@ -2,8 +2,6 @@
 
 $route['default_controller'] = "main";
 
-
-$route['products'] = "main/products";
 $route['orders'] = "/dashboards/orders";
 $route['dashboard'] = "/dashboards/dashboard";
 $route['inventory'] = "/dashboards/inventory";
