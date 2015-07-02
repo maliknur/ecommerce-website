@@ -12,10 +12,13 @@
 	<style type="text/css">
 		*{
 			/*outline: 1px solid black;*/
-			color: white;
+			/*color: white;*/
 		}
 		.similiar_products a{
 			margin: 0px 20px;
+		}
+		.product_info, .card-panel{
+			background-color: #D0E4F2
 		}
 	</style>
 	<script type="text/javascript">
@@ -41,9 +44,9 @@
 		<div class="row">
 			<div class="col l12"><a href="/">Go Back</a></div>
 		</div>
-		<div class="card-panel red lighten-2">
+		<div class="card-panel">
 			<div class="row">
-				<div class="col l12">
+				<div class="col l12 product_info">
 					<div class="row">
 						<div class="col l12">
 							<h3>Dress Shirt</h3>
@@ -51,14 +54,14 @@
 					</div>
 					<div class="row center-align">
 						<div class="col l4 product_images">
-							<a href=""	><img src="/assets/dress-shirt.png" width="230px"></a>
+							<a href=""	><img src="/assets/img/dress-shirt.png" width="230px"></a>
 							<div class="section"></div>
 							<div class="row">
 								<div class="col l12">
-									<a href=""><img src="/assets/dress-shirt.png" width="50px"></a>
-									<a href=""><img src="/assets/dress-shirt.png" width="50px"></a>
-									<a href=""><img src="/assets/dress-shirt.png" width="50px"></a>
-									<a href=""><img src="/assets/dress-shirt.png" width="50px"></a>
+									<a href=""><img src="/assets/img/dress-shirt.png" width="50px"></a>
+									<a href=""><img src="/assets/img/dress-shirt.png" width="50px"></a>
+									<a href=""><img src="/assets/img/dress-shirt.png" width="50px"></a>
+									<a href=""><img src="/assets/img/dress-shirt.png" width="50px"></a>
 								</div>
 							</div>
 						</div>
@@ -84,7 +87,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="card-panel red lighten-2">
+		<div class="card-panel">
 			<div class="row">
 				<div class="col l12">
 					<h5>Similiar products</h5>
@@ -93,14 +96,13 @@
 			<div class="section"></div>
 			<div class="row similiar_products center-align">
 				<div class="col l12">
-					<a href=""><img src="/assets/dress-shirt.png" width="100px"></a>
-					<a href=""><img src="/assets/dress-shirt.png" width="100px"></a>
-					<a href=""><img src="/assets/dress-shirt.png" width="100px"></a>
-					<a href=""><img src="/assets/dress-shirt.png" width="100px"></a>
-					<a href=""><img src="/assets/dress-shirt.png" width="100px"></a>
-					<a href=""><img src="/assets/dress-shirt.png" width="100px"></a>
-					<a href=""><img src="/assets/dress-shirt.png" width="100px"></a>
-					<a href=""><img src="/assets/dress-shirt.png" width="100px"></a>
+					<a href=""><img src="/assets/img/dress-shirt.png" width="100px"></a>
+					<a href=""><img src="/assets/img/dress-shirt.png" width="100px"></a>
+					<a href=""><img src="/assets/img/dress-shirt.png" width="100px"></a>
+					<a href=""><img src="/assets/img/dress-shirt.png" width="100px"></a>
+					<a href=""><img src="/assets/img/dress-shirt.png" width="100px"></a>
+					<a href=""><img src="/assets/img/dress-shirt.png" width="100px"></a>
+					<a href=""><img src="/assets/img/dress-shirt.png" width="100px"></a>
 				</div>
 			</div>
 		</div>

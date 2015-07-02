@@ -11,7 +11,7 @@
 	<script type="text/javascript" src="/assets/materialize-v0.97.0/materialize/js/materialize.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
-				  
+				 
 		   $('.dropdown-button').dropdown({
 		      inDuration: 300,
 		      outDuration: 225,
@@ -20,6 +20,13 @@
 		      gutter: 0, // Spacing from edge
 		      belowOrigin: false // Displays dropdown below the button
 		    });
+
+		   //auto-load
+		   $.get("/catalogs/catalog_page", function(res){
+		   		$("#products").html(res);
+		   });
+
+		   //ajax 
 
 		});
 	</script>
@@ -32,19 +39,11 @@
 <!-- 		<div id="header"></div> -->
 		<div class="row">
 			<div id="sidebar" class="col s12 m4 l2">
-				<div class="card-panel red lighten-2">
-					<div class="row">
-						<div class="input-field col s10">
-							<form action='/main/product_info'>
-								<i class="small material-icons prefix">search</i>
-								<input placeholder='Search' id="search" name ="search" type="text" class="validate">
-								<label for="search"></label>
-							</form>
-						</div>
-					</div>
+				<div class="section"></div>
+				<div class="card-panel">
 					<div class="row">
 						<div class="col s12">
-							<h4>Category</h4>
+							<h5>Category</h5>
 						</div>
 						<div class="col s10 offset-s2">
 							<ul>
@@ -60,7 +59,7 @@
 				</div>
 			</div>
 			<div id="catalog" class="col s12 m8 l10">
-				<div class="card-panel red lighten-2">
+				<div class="card-panel">
 					<div class="row">
 						<div class="col s6">
 							<h3>Tshirts (page2)</h3>
@@ -86,17 +85,8 @@
 					</div>
 					<div class="row">
 						<div class="col s12	center-align">
-							<div class="products">
-								<a href="/main/product_info"><img src="assets/dress-shirt.png" width="150px"></a>
-								<a href="/main/product_info"><img src="assets/dress-shirt.png" width="150px"></a>
-								<a href="/main/product_info"><img src="assets/dress-shirt.png" width="150px"></a>
-								<a href="/main/product_info"><img src="assets/dress-shirt.png" width="150px"></a>
-								<a href="/main/product_info"><img src="assets/dress-shirt.png" width="150px"></a>
-								<a href="/main/product_info"><img src="assets/dress-shirt.png" width="150px"></a>
-								<a href="/main/product_info"><img src="assets/dress-shirt.png" width="150px"></a>
-								<a href="/main/product_info"><img src="assets/dress-shirt.png" width="150px"></a>
-								<a href="/main/product_info"><img src="assets/dress-shirt.png" width="150px"></a>
-								<a href="/main/product_info"><img src="assets/dress-shirt.png" width="150px"></a>
+							<div id="products">
+								<!-- "partials/catalog_products.php" -->
 							</div>
 						</div>
 					</div>
