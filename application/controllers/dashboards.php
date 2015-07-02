@@ -10,12 +10,23 @@ class Dashboards extends CI_Controller {
 
 	}
 
+	public function inventory()
+	{	
+	   $this->load->view('products');
+	}
+
+
+	public function dashboard()
+	{
+
+		$this->load->view('dashboard');
+	}
+
 
 	public function orders()
 	{
 		$result = $this->Dashboard->load_all_orders();
-		// var_dump($result);
-		// die();
+
 		if($result)
 		{
 

@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<?php include('partials/header.php'); ?>
-	<link type="text/css" rel="stylesheet" href="assets/style_dashboard.css">
+	<script src="/assets/javascript.js"></script>
+	<link type="text/css" rel="stylesheet" href="/assets/style_dashboard.css">
 	<title>Dashboard Orders</title>
 </head>
 <body>

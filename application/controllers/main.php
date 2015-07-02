@@ -17,25 +17,12 @@ class Main extends CI_Controller {
 		$this->load->view("catalog");
 	}
 
-	public function products()
-	{	
-	   $this->load->view('products');
-	}
-
 	public function product_info()
 	{
 		$this->load->view('product_info');
 	}
 
-	public function dashboard()
-	{
-		$this->load->view('dashboard');
-	}
-
-	public function orders()
-	{
-		$this->load->view('orders');
-	}
+	
 
 	public function cart()
 	{
