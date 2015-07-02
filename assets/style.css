@@ -1,24 +1,31 @@
-
-
 * {
 	/*outline: 1px solid;*/
 }
 
+	.lightblue {
+		background-color: #d0e4f2;
+		color: #000;
+	}
+
+	.topspace {
+		padding-top: 7em;
+	}
+
 	/* label color */
    .input-field label {
-		color: white;
+		color: black;
 	}
 
 	/* label focus color */
 	.input-field input[type=text]:focus + label {
-		color: white;
+		color: black;
 	}
 
 	/* label underline focus color */
 	.input-field input[type=text]:focus {
-		color: white;
-		border-bottom: 1px solid white;
-		box-shadow: 0 1px 0 0 white;
+		color: black;
+		border-bottom: 1px solid black;
+		box-shadow: 0 1px 0 0 black;
 	}
 
 	/* valid color */
@@ -35,8 +42,3 @@
 		border-bottom: 1px solid purple lighten-2;
 		box-shadow: 0 1px 0 0 purple lighten-2;
 	}
-   /* icon prefix focus color */
-/*   .input-field .prefix.active {
-     color: #000;
-   }*/
-

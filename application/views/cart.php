@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
 <?php include("partials/header.php"); ?>
-<link rel="stylesheet" href="assets/style.css">
+<script type="text/javascript" src="/assets/javascript.js"></script>
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="/assets/style.css">
+
 	<title></title>
 
 </head>
@@ -13,8 +17,8 @@
 		<div class="section"></div>
 		<div class="row">
 			<div class="col s12 m7 l7">
-				<div class="card-panel red lighten-2">
-					<h5 class="white-text">Shipping Information</h5>
+				<div class="card-panel lightblue">
+					<h5>Shipping Information</h5>
 
 					<div class="row">
 						<form class="col s12">
@@ -54,10 +58,10 @@
 				</div>
 			</div>
 			<div class="col s12 m5 l5">
-				<div class="card-panel red lighten-2">
+				<div class="card-panel" style="background-color: #85a5cc;">
 
-				<table class="hoverable responsive-table striped bordered">
-					<h5 class="white-text">Order Summary</h5>
+				<table class="responsive-table bordered">
+					<h5>Order Summary</h5>
 					<thead>
 						<tr>
 							<th data-field="item">Item</th>
@@ -88,8 +92,8 @@
 
 		<div class="row">
 			<div class="col s12 m7 l7">
-				<div class="card-panel red lighten-2">
-					<h5 class="white-text">Billing Information</h5>
+				<div class="card-panel lightblue">
+					<h5 class="">Billing Information</h5>
 
 					<div class="row">
 						<form class="col s12">
