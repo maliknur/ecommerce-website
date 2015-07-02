@@ -9,5 +9,11 @@ $route['orders'] = "main/orders";
 
 $route['cart'] = "main/cart";
 
+//Austin - Catalog, product_info routes
+
+$route['catalogs'] = "catalogs";
+
+//Austin - Catalog, product_info routes
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

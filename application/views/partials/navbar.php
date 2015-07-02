@@ -2,7 +2,7 @@
 	<div class="nav-wrapper">
 		<a href="#" class="brand-logo center">Mass Buy</a>
 		<ul id="nav-mobile" class="left hide-on-med-and-down">
-			<li><a href="">Home</a></li>
+			<li><a href="/">Home</a></li>
 			<li><a href="signin">Sign in</a></li>
 			<li><a href=""></a></li>
 		</ul>
