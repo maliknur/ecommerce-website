@@ -66,6 +66,8 @@ class Main extends CI_Controller {
 		if ($validate_result == "valid")
 		{
 			$this->user->register_new_user($post);
+			$this->session->set_flashdata("registered", "Welcome to E-Commerce! You are now registered!");
+			redirect("signin");
 		}
 		else
 		{

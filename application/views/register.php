@@ -56,18 +56,23 @@
 				</div>
 			</div>
 			<div class="col s12 m3 l3">
-				<?php
-					if ($this->session->flashdata())
-					{
-						foreach ($this->session->flashdata("errors") as $error)
-						{
-							echo $error;
-						}						
-					}
-				?>
-
+				<div class="card">
+				<!-- List all error messages -->
+				<?php if ($this->session->flashdata("errors")) { ?>
+					<a class="btn waves-effect waves-light deep-orange darken-1 tooltipped block" data-position="bottom" data-delay="50" data-tooltip="
+						<?php
+								foreach ($this->session->flashdata("errors") as $error)
+								{
+									$pattern = '/<p>(.*)<\/p>/';
+									preg_match($pattern, $error, $matches);
+									echo $matches[1];
+								}
+						?>
+					"><i class="material-icons">error_outline</i></a>
+				<?php } ?>
+				<!-- ======= -->
+				</div>
 			</div>
 		</div>
 	</div>
-
 </body>

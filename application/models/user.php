@@ -25,4 +25,11 @@ class User extends CI_Model {
 		}
 	}
 
+	public function register_new_user($post)
+	{
+		$query = "INSERT INTO customers (first_name, last_name, email, password, shipping_address_id, billing_address_id) VALUES (?,?,?,?,?,?)";
+		$values = array($post["first_name"], $post["last_name"], $post["email"], md5($post["password"]), 1, 1);
+		$this->db->query($query, $values);
+	}
+
 }
