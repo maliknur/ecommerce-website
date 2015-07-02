@@ -38,8 +38,38 @@ class Main extends CI_Controller {
 	public function check_signin()
 	{
 		$post = $this->input->post();
-		$user = $this->user->check_signin($post);
-		redirect("dashboard");
+		$check_user = $this->user->check_signin($post);
+		if ($check_user && $check_user["password"] == md5($post["password"]))
+		{
+			$user = array(
+				"id" => $check_user["id"],
+				"first_name" => $check_user["first_name"],
+				"last_name" => $check_user["last_name"],
+				"email" => $check_user["email"],
+				"admin_power" => $check_user["admin_power"],
+				"logged_in" => TRUE
+				);
+			// =============================================
+			// ======= LOGGED IN USER SESSION CREATED ======
+			// =============================================
+			$this->session->set_userdata($user);
+			if ($user["admin_power"] == 1)
+			{
+				redirect("orders");
+			}
+			else
+			{
+				redirect("/");
+			}
+			// =============================================
+			// =================== END =====================
+			// =============================================
+		}
+		else
+		{
+			$this->session->set_flashdata("login_error", "Invalid email or password!");
+			redirect("signin");
+		}
 	}
 
 	public function register()
@@ -54,6 +84,8 @@ class Main extends CI_Controller {
 		if ($validate_result == "valid")
 		{
 			$this->user->register_new_user($post);
+			$this->session->set_flashdata("registered", "Welcome to E-Commerce! You are now registered!");
+			redirect("signin");
 		}
 		else
 		{
