@@ -20,7 +20,7 @@
 				<li><a href="cart"><i class="material-icons">shopping_cart</i></a></li>
 				<li><a href="cart">Shopping Cart (5)</a></li>
 				<li>
-					<ul class="collapsible right hide-on-med-and-down" data-collapsible="accordion">
+					<ul class="collapsible search_navbar right hide-on-med-and-down" data-collapsible="accordion">
 						<li>
 							<div class="collapsible-header" style="background-color: #30395c; padding: 0; border-bottom-width: 0"><i class="material-icons" style="margin: 0">search</i></div>
 							<div class="collapsible-body">
