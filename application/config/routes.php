@@ -3,7 +3,7 @@
 $route['default_controller'] = "main";
 
 $route['products'] = "main/products";
-$route['dashboard'] = "main/dashboard";
+$route['dashboard'] = "dashboards/orders";
 $route['orders'] = "main/orders";
 
 

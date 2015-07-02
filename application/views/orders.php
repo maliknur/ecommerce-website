@@ -62,87 +62,70 @@
 			</tr>
 			
 
-				<tr>
-					<td>1</td>
-					<td>Steve Jobs</td>
-					<td>9/6/2014</td>
-					<td>123 dojo way Bellevue WA 98005</td>
-					<td>$ 124.99</td>
-					<td> 
-						<select>
-					      <option value="in_process">In process</option>
-					      <option value="shipped">Shipped</option>
-					      <option value="cancelled">Cancelled</option>
-					    </select>
+	<!-- display of all orders -->
+	<?php 
+	if(!empty($orders))
+	{
 
-					</td>
-					
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>Steve Jobs</td>
-					<td>9/6/2014</td>
-					<td>123 dojo way Bellevue WA 98005</td>
-					<td>$ 124.99</td>
-					<td> 
-						<select>
-					      <option value="in_process">In process</option>
-					      <option value="shipped">Shipped</option>
-					      <option value="cancelled">Cancelled</option>
-					    </select>
+	foreach ($orders as $value) {
+	 	
+		
 
-					</td>
-					
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>Steve Jobs</td>
-					<td>9/6/2014</td>
-					<td>123 dojo way Bellevue WA 98005</td>
-					<td>$ 124.99</td>
-					<td> 
-						<select>
-					      <option value="in_process">In process</option>
-					      <option value="shipped">Shipped</option>
-					      <option value="cancelled">Cancelled</option>
-					    </select>
+	 ?>
+		<tr>
+			<td><?= $value['id'] ?></td>
+			<td><?= $value['first_name'] ." ". $value['last_name'] ?></td>
+			<td><?= $value['created_at'] ?></td>
+			<td><?= $value['address'] . " ". $value['city'] ." ". $value['state']." ".$value['zipcode']  ?></td>
+			<td><?= $value['total'] ?></td>
+			<td> 
+				<select>
 
-					</td>
-					
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>Steve Jobs</td>
-					<td>9/6/2014</td>
-					<td>123 dojo way Bellevue WA 98005</td>
-					<td>$ 124.99</td>
-					<td> 
-						<select>
-					      <option value="in_process">In process</option>
-					      <option value="shipped">Shipped</option>
-					      <option value="cancelled">Cancelled</option>
-					    </select>
 
-					</td>
-					
-				</tr>
-				<tr>
-					<td>1</td>
-					<td>Steve Jobs</td>
-					<td>9/6/2014</td>
-					<td>123 dojo way Bellevue WA 98005</td>
-					<td>$ 124.99</td>
-					<td> 
-						<select>
-					      <option value="in_process">In process</option>
-					      <option value="shipped">Shipped</option>
-					      <option value="cancelled">Cancelled</option>
-					    </select>
 
-					</td>
-					
-				</tr>
+					<?php switch ($value['status'] ) { 
+				    case 'in process': 
+				    	 echo "<option value=". $value['status']. " selected >". $value['status']. "</option>";
+				    	 echo "<option value='shipped'>shipped</option>";
+				    	 echo "<option value='cancelled'>cancelled</option>";
+				    break; 
+
+				    case 'shipped': 
+				    	 echo "<option value=". $value['status']. " selected >". $value['status']. "</option>";
+				    	 echo "<option value='in process'>in process</option>";
+				    	 echo "<option value='cancelled'>cancelled</option>";
+				    break;
+
+				    case 'cancelled': 
+				    	 echo "<option value=". $value['status']. " selected >". $value['status']. "</option>";
+				    	 echo "<option value='in process'>in process</option>";
+				    	 echo "<option value='shipped'>shipped</option>";
+				    break; 
+					}
+					?>
+
+
+
+			    </select>
+
+			</td>
+			
+		</tr>
+
+		
 				
+	<?php 		}
+
+			  
+
+		} 
+	else { ?>
+
+		<tr><td colspan='6'><p>No orders found...</p></td></tr>";
+
+	<?php }
+	?>
+
 			
 			</table>
 	
