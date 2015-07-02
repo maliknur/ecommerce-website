@@ -4,12 +4,12 @@
 	<?php include('partials/header.php'); ?>
 
 	
-	<script type="text/javascript" src="assets/js/jquery.easy-pie-chart.js"></script>
-	<script src="assets/js/scale.fix.js"></script>
-	<link rel="stylesheet"type="text/css" href="assets/jquery.easy-pie-chart.css">
-	<link rel="stylesheet" href="assets/styles_pie.css">
-    <link rel="stylesheet" href="assets/pygment_trac.css">	
-    <link type="text/css" rel="stylesheet" href="assets/style_dashboard.css">
+	<script type="text/javascript" src="/assets/js/jquery.easy-pie-chart.js"></script>
+	<script src="/assets/js/scale.fix.js"></script>
+	<link rel="stylesheet"type="text/css" href="/assets/jquery.easy-pie-chart.css">
+	<link rel="stylesheet" href="/assets/styles_pie.css">
+    <link rel="stylesheet" href="/assets/pygment_trac.css">	
+    <link type="text/css" rel="stylesheet" href="/assets/style_dashboard.css">
 	<script>
 	$(document).ready(function(){
 
