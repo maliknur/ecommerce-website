@@ -34,6 +34,9 @@
 	</script>
 </head>
 <body>
+
+<?php include("partials/navbar.php");?>
+
 	<div class="container">
 		<div class="row">
 			<div class="col l12"><a href="/">Go Back</a></div>
