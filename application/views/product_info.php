@@ -1,29 +1,8 @@
 <html>
 <head>
-	<meta charset="UTF-8">
 	<title>Catalog Page</title>
-	<link rel="stylesheet" type="text/css" href="assets/catalog.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="/assets/materialize-v0.97.0/materialize/css/materialize.min.css"  media="screen,projection"/>
-	<!--Import jQuery before materialize.js-->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="/assets/materialize-v0.97.0/materialize/js/materialize.min.js"></script>
-	<style type="text/css">
-		*{
-			/*outline: 1px solid black;*/
-			/*color: white;*/
-		}
-		.similiar_products a{
-			margin: 0px 20px;
-		}
-		.product_info, .card-panel{
-			background-color: #D0E4F2
-		}
-		.back{
-			vertical-align: bottom;
-		}
-	</style>
+	<?php include("partials/header.php"); ?>
+	<link rel="stylesheet" type="text/css" href="/assets/product_info.css">
 	<script type="text/javascript">
 		$(document).ready(function(){
 				  
@@ -36,6 +15,8 @@
 		      belowOrigin: false // Displays dropdown below the button
 		    });
 
+		   $('select').material_select();
+
 		});
 	</script>
 </head>
@@ -44,9 +25,89 @@
 <?php include("partials/navbar.php");?>
 
 	<div class="container">
-		<div class="row">
-			<div class="col l12 back"><a href="/">Go Back</a></div>
+
+		<div class="card-panel">
+			<div class="row">
+				<div class="col s12 m5 l5">
+					<div class="row no_margin">
+						<div class="col s12 m12 l12">
+							<div class="card like_icons">
+								<h5 class="center">
+									<i class="material-icons">bookmark_border</i>
+									<i class="material-icons">favorite_border</i>
+									<i class="material-icons">star_outline</i>
+								</h5>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s8 m8 l8">
+							<div class="card">
+								<div class="card-image">
+									<img src=<?= '"'.$filename.'"';?>>
+								</div>
+							</div>
+						</div>
+						<div class="col s4 m4 l4">
+							<div class="card">
+								<div class="card-image">
+									<a href=""><img src=<?= '"'.$filename.'"';?>></a>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-image">
+									<a href=""><img src=<?= '"'.$filename.'"';?>></a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- <div class="card-panel"></div> -->
+				</div>
+				<div class="col s12 m7 l7">
+
+					<div class="row">
+						<div class="card">
+							<div class="col s12 m12 l12 lightblue">
+								<div class="card">
+									<div class="card-content">
+										<h5><?= $name ?></h5>
+										<p id="price">$<?= $price ?></p>
+										<div class="row">
+											<form action="/catalogs/add_to_cart" method="post">
+												<input type="hidden" name="id" value="<?= $id ?>">
+												<input type="hidden" name="price" value="<?= $price ?>">
+												<div class="input-field col s3 m3 l3">
+													<select name="quantity" class="browser-default">
+														<option disabled selected>Quantity</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+													</select>
+												</div>
+										</div>
+										<ul>
+											<li><i class="material-icons description">blur_circular</i>  Handmade</li>
+											<li><i class="material-icons description">blur_circular</i>  Materials: cotton, ink, shirt</li>
+											<li><i class="material-icons description">blur_circular</i>  Ships worldwide</li>
+										</ul>
+									</div>
+									<button class="btn col s12 m12 l12 waves-effect waves-light" type="submit">Add to Cart <i class="material-icons valignbottom">send</i></button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
 		</div>
+
+		<!-- <div class="row"> -->
+			<!-- <div class="col l12 back"><a href="/">Go Back</a></div> -->
+		<!-- </div> -->
+
 		<div class="card-panel">
 			<div class="row">
 				<div class="col l12 product_info">
@@ -57,7 +118,7 @@
 					</div>
 					<div class="row center-align">
 						<div class="col l4 product_images">
-							<a href=""	><img src=<?php echo '"'.$filename.'"';?> width="230px"></a>
+							<a href=""><img src=<?php echo '"'.$filename.'"';?> width="230px"></a>
 							<div class="section"></div>
 							<div class="row">
 								<div class="col l12">
@@ -72,19 +133,7 @@
 							<p><?php echo $description;?></p>
 						</div>
 					</div>
-					<div class="row price_buy">
-						<div class="input-field col l11">
-							<form action="/">
-								<a class="waves-effect waves-light btn right"><i class="material-icons right"></i>Buy</a>
-								<!-- Dropdown Trigger -->
-								<a class='dropdown-button btn right' name="price" href='#' data-activates='dropdown1'>Price</a>
-								<!-- Dropdown Structure -->
-								<ul id='dropdown1' name="price" class='dropdown-content'>
-									<li><a href="#!">1 ($<?php echo $price;?>)</a></li>
-								</ul>
-							</form>
-						</div>
-					</div>
+
 				</div>
 			</div>
 		</div>

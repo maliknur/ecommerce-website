@@ -1,0 +1,47 @@
+* {
+	/*outline: 1px solid black;*/
+}
+
+body {
+	background-color: #EFEFEF;
+}
+.container {
+	width: 85%;
+}
+
+.similiar_products a{
+	margin: 0px 20px;
+}
+
+.product_info, .card-panel{
+	background-color: white;
+}
+
+.back{
+	vertical-align: bottom;
+}
+
+.no_margin {
+	margin: 0px;
+}
+
+.like_icons {
+	background-color: #E5F4F7;
+}
+
+.lightblue {
+	background-color: #E5F4F7;
+}
+
+.description {
+	vertical-align: bottom;
+}
+
+#price {
+	font-size: 1.4em;
+	color: #f44336;
+}
+
+.valignbottom {
+	vertical-align: bottom;
+}

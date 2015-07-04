@@ -8,8 +8,11 @@ $route['inventory'] = "/dashboards/inventory";
 
 // ===== Routes by Chris =====
 $route['cart'] = "/main/cart";
-$route['signin'] = "/main/signin";
 $route['register'] = "/main/register";
+$route['signin'] = "/main/signin";
+$route['logout'] = "/main/logout";
+$route['product_info/(:any)'] = "/catalogs/product_info/$1";
+$route['add_to_cart'] = "/catalogs/add_to_cart";
 // ===========================
 
 //Austin - Catalog, product_info routes

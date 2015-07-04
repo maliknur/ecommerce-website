@@ -10,6 +10,7 @@ class Catalogs extends CI_Controller {
 		parent::__construct();
 		// $this->output->enable_profiler();	
 		$this->limit = 15;
+		$this->load->model("customized_models/catalog_product", "catalog");
 	}
 
 	public function index()
@@ -31,10 +32,16 @@ class Catalogs extends CI_Controller {
 
 	public function product_info($product_id)
 	{
-		var_dump($product_id);
-		$this->load->model("customized_models/catalog_product", "catalog");
 		$product = $this->catalog->get_product_image_by_id($product_id);
-		die('product_info');
+		$this->load->view('product_info', $product);
+	}
+
+	public function add_to_cart()
+	{
+		$post = $this->input->post();
+		$this->catalog->add_to_cart($post);
+		// var_dump($post);
+		// die();
 	}
 
 }

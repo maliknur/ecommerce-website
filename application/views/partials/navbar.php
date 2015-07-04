@@ -1,10 +1,14 @@
 <div class="navbar-fixed">
 	<nav style="background-color: #30395c;">
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">E-Commerce</a>
+			<a href="/" class="brand-logo center">E-Commerce</a>
 			<ul id="nav-mobile" class="left hide-on-med-and-down">
 				<li><a href="/">Home</a></li>
+				<?php if ($this->session->userdata("user")) { ?>
+				<li><a href="logout">Log out</a></li>	
+				<?php } else { ?>
 				<li><a href="signin">Sign in</a></li>
+				<?php } ?>
 			</ul>
 
 			<!-- SideNav for Mobile Web -->
@@ -18,9 +22,9 @@
 
 			<ul class="right hide-on-med-and-down">
 				<li><a href="cart"><i class="material-icons">shopping_cart</i></a></li>
-				<li><a href="cart">Shopping Cart (5)</a></li>
+				<li><a href="/cart">Shopping Cart (5)</a></li>
 				<li>
-					<ul class="collapsible search_navbar right hide-on-med-and-down" data-collapsible="accordion">
+					<ul class="collapsible search_navbar right hide-on-med-and-down" data-collapsible="accordion" style="border: 0px; margin: 0px">
 						<li>
 							<div class="collapsible-header" style="background-color: #30395c; padding: 0; border-bottom-width: 0"><i class="material-icons" style="margin: 0">search</i></div>
 							<div class="collapsible-body">

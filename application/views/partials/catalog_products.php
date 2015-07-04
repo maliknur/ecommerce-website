@@ -44,7 +44,7 @@
 foreach($products as $product)
 {
 ?>
-				<a href=<?php echo "/main/product_info/". $product['id'];?>><img src=<?php echo '"'.$product['filename'].'"'?> width ="110px" height="150px"></a>
+				<a href=<?php echo "product_info/". $product['id'];?>><img src=<?php echo '"'.$product['filename'].'"'?> width ="110px" height="150px"></a>
 
 <?php
 }
