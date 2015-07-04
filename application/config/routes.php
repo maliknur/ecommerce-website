@@ -5,6 +5,9 @@ $route['default_controller'] = "main";
 $route['orders'] = "/dashboards/orders";
 $route['dashboard'] = "/dashboards/dashboard";
 $route['inventory'] = "/dashboards/inventory";
+$route['/dashboards/orders_sort'] = "/dashboards/orders_sort";
+$route['orders_status_update'] = "/dashboards/orders_status_update";
+$route['search_by_name'] = "dashboards/search_by_name";
 
 // ===== Routes by Chris =====
 $route['cart'] = "/main/cart";

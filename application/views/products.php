@@ -3,11 +3,12 @@
 <head>
 	<?php include('partials/header.php'); ?>
 	<link type="text/css" rel="stylesheet" href="assets/style_dashboard.css">
+	  <link rel="stylesheet" href="/assets/style.css">
 	<title>Dashboard Products</title>
 </head>
 <body>
 
-<?php include('partials/navbar.php'); ?>
+<?php include('partials/navbar_admin.php'); ?>
 
 	<div class="container"> 	
 		
@@ -52,7 +53,7 @@
 				<th>Name</th>
 				<th>Inventory Count</th>
 				<th>Quantity Sold</th>
-				<th colspan="2">Action</th>
+				<th>Action</th>
 
 			
 			</tr>
@@ -68,9 +69,7 @@
 						<a href="#">
 							<i class="material-icons left">edit</i>
 						</a>
-						
-					</td>
-					<td>
+					
 						<a href="#">
 							<i class="material-icons left">delete</i>
 						</a>
@@ -91,8 +90,7 @@
 							<i class="material-icons left">edit</i>
 						</a>
 						
-					</td>
-					<td>
+					
 						<a href="#">
 							<i class="material-icons left">delete</i>
 						</a>
@@ -112,8 +110,7 @@
 							<i class="material-icons left">edit</i>
 						</a>
 						
-					</td>
-					<td>
+					
 						<a href="#">
 							<i class="material-icons left">delete</i>
 						</a>
@@ -132,9 +129,7 @@
 						<a href="#">
 							<i class="material-icons left">edit</i>
 						</a>
-						
-					</td>
-					<td>
+					
 						<a href="#">
 							<i class="material-icons left">delete</i>
 						</a>

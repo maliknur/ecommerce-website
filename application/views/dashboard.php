@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="/assets/styles_pie.css">
     <link rel="stylesheet" href="/assets/pygment_trac.css">	
     <link type="text/css" rel="stylesheet" href="/assets/style_dashboard.css">
+    <link rel="stylesheet" href="/assets/style.css">
 	<script>
 	$(document).ready(function(){
 
@@ -40,7 +41,7 @@
 </head>
 <body>
 
-<?php include('partials/navbar.php') ?>
+<?php include('partials/navbar_admin.php') ?>
 
 
 	
@@ -75,7 +76,7 @@
 		<!-- new orders table -->
 		<div class="col s6">
 			<div class="card-panel">
-				<h5 class="blue-text darken-2">New orders</h5>
+				<a href="orders"><h5>New orders</h5></a>
 			
 			
 				<table class="responsive-table bordered striped">
@@ -141,7 +142,7 @@
 			</table>
 
 			<span class="right">
-				<a href="" > see all..</a>
+				<a href="orders" > see all..</a>
 			</span>
 		</div>
 	</div>
@@ -149,7 +150,7 @@
 		<!-- shipping table -->
 		<div class="col s6">
 			<div class="card-panel">
-				<h5 class="blue-text darken-2">Due to shipping</h5>
+				<h5>Due to shipping</h5>
 
 				<table class="responsive-table bordered striped">
 					<tr>
@@ -221,7 +222,7 @@
 		<!-- inventory table -->
 		<div class="col s6">
 			<div class="card-panel">
-				<h5 class="blue-text darken-2">Invetory status</h5>
+				<a href="inventory"><h5>Invetory status</h5></a>
 			
 			
 				<table class="responsive-table bordered striped">
@@ -266,7 +267,7 @@
 				</table>
 
 			<span class="right">
-				<a href="" > see all..</a>
+				<a href="inventory" > see all..</a>
 			</span>
 				
 
@@ -278,7 +279,7 @@
 		<!-- statistics table -->
 		<div class="col s6">
 			<div class="card-panel statistics">
-				<h5 class="blue-text darken-2">Statistic</h5>
+				<h5>Statistics</h5>
 				
 				<div class="chart">
 				   <div class="percentage" data-percent="55"><span>55</span>%</div>
